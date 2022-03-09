@@ -1,0 +1,43 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page ";
+  
+}
+<head>
+    <style> 
+        table, th, td, tr{border: 1px solid black;
+        margin:1px solid black;padding:10px;width:50pc;}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+table{ box-shadow: 2px 2px 20px}
+th{background-color:lightgreen;}
+td{background-color:green;}
+body{ background-color:lightgreen;
+}
+
+    </style>
+</head>
+<div class="text-center">
+<h1>Students that are recorded</h1>
+<body>
+
+<table class="center">
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Section</th>
+    <th>Year</th>
+    <th>Address</th>
+
+<tr>
+    <td>@ViewData["fname"]</td>
+    <td>@ViewData["lname"]</td>
+    <td>@ViewData["section"]</td>
+    <td>@ViewData["year"]</td>
+    <td>@ViewData["address"]</td>   
+</tr>
+<table>
+</body>
+</div>
